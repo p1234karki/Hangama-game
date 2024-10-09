@@ -1,0 +1,421 @@
+<html>
+	<head>
+		<title>hangama</title>
+		<style>
+			#big
+				{
+				display:flex;
+				height:30em;
+				width:60em;
+				border:4px solid white;
+				background-color:cyan;
+				}
+			#container
+				{
+				display:flex;
+				height:25em;
+				width:50em;
+				margin-top:2.5em;
+				margin-left:5em;
+				background-color:white;
+				<!-- border: 2px solid ; -->
+				}
+			#divi
+				{
+				margin-left:1.5em;
+				margin-top:1.2em;
+				height:22em;
+				width:22em;
+				<!-- border: 2px solid black; -->
+				}
+			#divi2
+				{
+				margin-right:1.5em;
+				margin-top:1.2em;
+				height:22em;
+				width:28em;
+				<!-- border: 2px solid black; -->
+				}
+			#childivi
+				{
+				height:15em;
+				width:0em;
+				border: 2px solid black;
+				position:relative;
+				transform: rotate(90deg);
+				left:10em;
+				top:8em;
+				}
+			#childivi2
+				{
+				height:13.5em;
+				width:0em;
+				border: 2px doted black;
+				position:relative;
+				top: -13.5em;
+				left:5em;
+				}
+			#childivi3
+				{
+				height:10em;
+				width:0em;
+				border: 2px solid black;
+				position:relative;
+				top: -32.3em;
+				left:10.1em;
+				transform:rotate(90deg);
+				}
+			#childivi4
+				{
+				height:1em;
+				width:0em;
+				border:2px solid black;
+				position:relative;
+				top:-37.4em;
+				left:15.1em;
+				}
+			#childivi5
+				{
+				height:3em;
+				width:3em;
+				border: 4px solid black;
+				border-radius:90%;
+				position:relative;
+				top:-37.5em;
+				left:13.3em;
+				}
+			#childivi6
+				{
+				height:3em;
+				width:0em;
+				border:2px solid black;
+				position:relative;
+				top:-37.5em;
+				left:15em;
+				}
+			#childivi7
+				{
+				height:2em;
+				width:0em;
+				border:2px solid black;
+				position:relative;
+				top:-41.3em;
+				left:13.9em;
+				transform:rotate(60deg);
+				}
+			#childivi8
+				{
+				height:2em;
+				width:0em;
+				border:2px solid black;
+				position:relative;
+				top:-43.4em;
+				left:16em;
+				transform:rotate(-50deg);
+				}
+			#childivi9
+				{
+				height:2em;
+				width:0em;
+				border:2px solid black;
+				position:relative;
+				top:-42.5em;
+				left:15.9em;
+				transform:rotate(-45deg);
+				}
+			#childivi10
+				{
+				height:2em;
+				width:0em;
+				border:2px solid black;
+				position:relative;
+				top:-44.7em;
+				left:14.1em;
+				transform:rotate(45deg);
+				}
+			#text
+				{
+				position:relative;
+				top:-39em;
+				left:5em;
+				font-weight:900;
+				}
+			#divi2child
+				{
+				display:flex;
+				margin-left:3em;
+				margin-top:3em;
+				width:20em;
+				height:4em;
+				justify-content:space-evenly;
+				<!-- border:2px solid black; -->
+				
+				}
+			.rainbow
+				{
+				height:3em;
+				width:2.2em;
+				<!-- border:2px solid black; -->
+				<!-- aligns-items:center; -->
+				}
+			.center
+				{
+				text-align:center;
+				<!-- aligns-items:center; -->
+				}
+			#para
+				{
+				margin-top:0.5em;
+				margin-left:2em;
+				height:1.5em;
+				width:22em;
+				<!-- border: 2px solid black; -->
+				}
+			#childpara
+				{
+				position:relative;
+				top:-1em;
+				padding-top:0%:
+				text-align:center;
+				margin-left:1em;
+				}
+			#incorrect
+				{
+				margin-top:0.3em;
+				margin-left:7em;
+				height:1.5em;
+				width:12em;
+				<!-- border:2px solid black; -->
+				}
+			#incorrectchild
+				{
+				position:relative;
+				top:-1em;
+				}
+			#red
+				{
+				position:relative;
+				top:-3.5em;
+				left:8.5em;
+				color:red;
+				}
+			#a-z
+				{
+				justify-content:space-evenly;
+				display:flex;
+				height:2em;
+				width:23em;
+				margin-top:0.4em;
+				margin-left:1.3em;
+				<!-- border:2px solid black; -->
+				}
+			.A
+				{
+				background-color:blue;
+				text-align:center;
+				height:1.5em;
+				border:2px solid blue;
+				width:2em;
+				padding-top:0.2em;
+				color:white;
+				}
+			<!-- .b -->
+				<!-- {  -->
+				<!-- background-color:red; -->
+				<!-- } -->
+			#a-z2
+				{
+				height:2em;
+				width:23em;
+				margin-top:0.4em;
+				margin-left:1.3em;
+				display:flex;			
+				justify-content:space-evenly;
+				<!-- border:2px solid black; -->
+				}
+			.B	
+				{
+				background-color:blue;
+				text-align:center;
+				height:1.5em;
+				border:2px solid blue;
+				width:2em;
+				padding-top:0.2em;
+				color:white;
+				}
+			#a-z3	
+				{
+				height:2em;
+				width:19em;
+				margin-left:3em;
+				margin-top:0.5em;
+				display:flex;
+				justify-content:space-evenly;
+				<!-- border:2px solid black; -->
+				}
+			.C
+				{
+				background-color:blue;
+				text-align:center;
+				height:1.5em;
+				width:2em;
+				color:white;
+				border:2px solid blue;
+				}
+			.pink
+				{
+				background-color:grey;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="big">
+			<div id="container">
+				<div id="divi">
+					<div id="childivi">
+					</div>
+					<div id="childivi2">
+					</div>
+					<div id="childivi3">
+					</div>
+					<div id="childivi4">
+					</div>
+					<div id="childivi5">
+					</div>
+					<div id="childivi6">
+					</div>
+					<div id="childivi7">
+					</div>
+					<div id="childivi8">
+					</div>
+					<div id="childivi9">
+					</div>
+					<div id="childivi10">
+					</div>
+					<div id="text">	
+					HANGAMA GAME
+					</div>
+
+				</div>
+				<div id="divi2">
+					<div id="divi2child">
+					<div class="rainbow">
+						<h2 class="center">R</h2>
+					</div>
+					<div class="rainbow">
+						<h2 class="center" >__</h2>
+					</div>
+					<div class="rainbow">
+						<h2 class="center" >__</h2>
+					</div>
+					<div class="rainbow">
+						<h2 class="center">N</h2>
+					</div>
+					<div class="rainbow">
+						<h2 class="center" >__</h2>
+					</div>
+					<div class="rainbow">
+						<h2 class="center">O</h2>	
+					</div>
+					<div class="rainbow">
+						<h2 class="center">W</h2>
+					</div>
+				</div>
+					<div id="para">
+						<h4 id="childpara">Hint : Colorful light display in sky during rain . </h4>
+					</div>
+					<div id="incorrect"> 
+						<h4 id="incorrectchild">incorrect guesses : 
+							<h4 id="red">4/6</h4>
+						</h4>
+					</div>
+					<div id="a-z">
+						<div class="A  pink" >
+							A
+						</div>
+						<div class="A"  >
+							B
+						</div>
+						<div class="A" >
+							C
+						</div>
+						<div class="A" >
+							D
+						</div>
+						<div class="A" >
+							E
+						</div>
+						<div class="A" >
+							F
+						</div>
+						<div class="A" >
+							G	
+						</div>
+						<div class="A" >
+							H
+						</div>
+						<div class="A">
+							I
+						</div>
+					</div>
+					<div id="a-z2">
+						<div class="B" >
+							J
+						</div>
+						<div class="B" >
+							K
+						</div>
+						<div class="B" >
+							L
+						</div>
+						<div class="B" >
+							M
+						</div>
+						<div class="B" >
+							N
+						</div>
+						<div class="B" >
+							O
+						</div>
+						<div class="B" >
+							P	
+						</div>
+						<div class="B" >
+							Q
+						</div>
+						<div class="B">
+							R
+						</div>
+					
+					</div>
+					<div id="a-z3">
+						<div class="C">
+							S
+						</div>
+						<div class="C">
+							T
+						</div>
+						<div class="C">
+							U
+						</div>
+						<div class="C">
+							V
+						</div>
+						<div class="C">
+							W
+						</div>
+						<div class="C">
+							X
+						</div>
+						<div class="C">
+							Y
+						</div>
+						<div class="C">
+							Z
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
